@@ -1,6 +1,168 @@
-<section id="viral-moments">
-    <h2>Viral Moments</h2>
-    <img src="images/IMG_5588.jpeg" alt="Moment 1" />
-    <img src="images/IMG_5589.jpeg" alt="Moment 2" />
-    <img src="images/IMG_5590.jpeg" alt="Moment 3" />
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marthe Hardy – Social Media Portfolio</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background: #0d0d0d;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+      border-bottom: 1px solid #222;
+    }
+
+    header h1 {
+      font-size: 2.6rem;
+      letter-spacing: 0.04em;
+      color: #ffffff;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.05rem;
+      color: #aaa;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      padding: 18px 20px;
+      background: #111;
+      border-bottom: 1px solid #222;
+    }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 0.95rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    nav a:hover { color: #fff; }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    section { margin-bottom: 80px; }
+
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #ffffff;
+      border-left: 4px solid #e63946;
+      padding-left: 14px;
+    }
+
+    .section-description {
+      font-size: 0.97rem;
+      color: #999;
+      max-width: 720px;
+      margin-bottom: 32px;
+    }
+
+    /* Viral Moments gallery */
+    .viral-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .viral-grid figure {
+      display: flex;
+      flex-direction: column;
+      background: #1a1a1a;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.5);
+      transition: transform 0.25s;
+    }
+
+    .viral-grid figure:hover { transform: translateY(-4px); }
+
+    .viral-grid img {
+      width: 100%;
+      aspect-ratio: 9 / 16;
+      object-fit: cover;
+      display: block;
+    }
+
+    .viral-grid figcaption {
+      padding: 12px 14px;
+      font-size: 0.88rem;
+      color: #bbb;
+      text-align: center;
+      border-top: 1px solid #2a2a2a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      border-top: 1px solid #222;
+      font-size: 0.85rem;
+      color: #555;
+    }
+
+    @media (max-width: 640px) {
+      .viral-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Marthe Hardy</h1>
+  <p>Social Media Portfolio</p>
+</header>
+
+<nav>
+  <a href="#viral">Viral Moments</a>
+</nav>
+
+<main>
+
+  <section id="viral">
+    <h2>March Viral Moments</h2>
+    <p class="section-description">
+      TikTok is my strongest channel. These three organic posts from March demonstrate my ability
+      to create content that the algorithm amplifies naturally—zero paid budget, pure strategic
+      content architecture.
+    </p>
+    <div class="viral-grid">
+      <figure>
+        <img src="images/IMG_5588.jpeg" alt="Viral post 1" />
+        <figcaption>Viral Post 1</figcaption>
+      </figure>
+      <figure>
+        <img src="images/IMG_5589.jpeg" alt="Viral post 2" />
+        <figcaption>Viral Post 2</figcaption>
+      </figure>
+      <figure>
+        <img src="images/IMG_5590.jpeg" alt="Viral post 3" />
+        <figcaption>Viral Post 3</figcaption>
+      </figure>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2025 Marthe Hardy. All rights reserved.
+</footer>
+
+</body>
+</html>

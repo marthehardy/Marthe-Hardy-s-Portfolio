@@ -75,14 +75,13 @@
       margin-bottom: 32px;
     }
 
-    /* Viral Moments gallery */
-    .viral-grid {
+    /* Shared card grid */
+    .card-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
       gap: 20px;
     }
 
-    .viral-grid figure {
+    .card-grid figure {
       display: flex;
       flex-direction: column;
       background: #1a1a1a;
@@ -92,21 +91,62 @@
       transition: transform 0.25s;
     }
 
-    .viral-grid figure:hover { transform: translateY(-4px); }
+    .card-grid figure:hover { transform: translateY(-4px); }
 
-    .viral-grid img {
+    .card-grid img,
+    .card-grid video {
       width: 100%;
-      aspect-ratio: 9 / 16;
-      object-fit: cover;
       display: block;
     }
 
-    .viral-grid figcaption {
+    .card-grid figcaption {
       padding: 12px 14px;
       font-size: 0.88rem;
       color: #bbb;
       text-align: center;
       border-top: 1px solid #2a2a2a;
+    }
+
+    /* Viral Moments: portrait 3-col */
+    .viral-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .viral-grid img {
+      aspect-ratio: 9 / 16;
+      object-fit: cover;
+    }
+
+    /* Campaign Work: landscape 2-col */
+    .campaign-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .campaign-grid img {
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+
+    /* Analytics: single centred image */
+    .analytics-grid {
+      grid-template-columns: 1fr;
+      max-width: 640px;
+    }
+
+    .analytics-grid img {
+      object-fit: contain;
+      background: #111;
+    }
+
+    /* Video section */
+    .video-grid {
+      grid-template-columns: 1fr;
+      max-width: 640px;
+    }
+
+    .video-grid video {
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
     }
 
     footer {
@@ -118,7 +158,8 @@
     }
 
     @media (max-width: 640px) {
-      .viral-grid { grid-template-columns: 1fr; }
+      .viral-grid,
+      .campaign-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -131,6 +172,9 @@
 
 <nav>
   <a href="#viral">Viral Moments</a>
+  <a href="#campaign">Campaign Work</a>
+  <a href="#analytics">Analytics</a>
+  <a href="#video">Ad Video</a>
 </nav>
 
 <main>
@@ -142,7 +186,7 @@
       to create content that the algorithm amplifies naturally—zero paid budget, pure strategic
       content architecture.
     </p>
-    <div class="viral-grid">
+    <div class="card-grid viral-grid">
       <figure>
         <img src="images/IMG_5588.jpeg" alt="Viral post 1" />
         <figcaption>Viral Post 1</figcaption>
@@ -154,6 +198,60 @@
       <figure>
         <img src="images/IMG_5590.jpeg" alt="Viral post 3" />
         <figcaption>Viral Post 3</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="campaign">
+    <h2>Campaign Work</h2>
+    <p class="section-description">
+      A selection of branded content and creative campaigns spanning energy, solar, and press topics.
+    </p>
+    <div class="card-grid campaign-grid">
+      <figure>
+        <img src="images/self_energy.jpeg" alt="Energy campaign" />
+        <figcaption>Energy Campaign</figcaption>
+      </figure>
+      <figure>
+        <img src="images/self_solar.jpeg" alt="Solar campaign" />
+        <figcaption>Solar Campaign</figcaption>
+      </figure>
+      <figure>
+        <img src="images/self_press.png" alt="Press feature" />
+        <figcaption>Press Feature</figcaption>
+      </figure>
+      <figure>
+        <img src="images/IMG_2766.jpeg" alt="Campaign content" />
+        <figcaption>Campaign Content</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="analytics">
+    <h2>Analytics</h2>
+    <p class="section-description">
+      Real numbers. 753K views achieved through organic strategy—no paid amplification.
+    </p>
+    <div class="card-grid analytics-grid">
+      <figure>
+        <img src="images/analytics_753k.png" alt="Analytics screenshot showing 753k views" />
+        <figcaption>753K Organic Views</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="video">
+    <h2>Ad Video</h2>
+    <p class="section-description">
+      Mock ad concept demonstrating scripting, filming, and editing skills.
+    </p>
+    <div class="card-grid video-grid">
+      <figure>
+        <video controls>
+          <source src="images/mock_ad_video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Mock Ad Video</figcaption>
       </figure>
     </div>
   </section>

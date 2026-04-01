@@ -1,266 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marthe Hardy – Social Media Portfolio</title>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-      background: #0d0d0d;
-      color: #f0f0f0;
-      line-height: 1.6;
-    }
-
-    header {
-      text-align: center;
-      padding: 60px 20px 40px;
-      border-bottom: 1px solid #222;
-    }
-
-    header h1 {
-      font-size: 2.6rem;
-      letter-spacing: 0.04em;
-      color: #ffffff;
-    }
-
-    header p {
-      margin-top: 10px;
-      font-size: 1.05rem;
-      color: #aaa;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 32px;
-      padding: 18px 20px;
-      background: #111;
-      border-bottom: 1px solid #222;
-    }
-
-    nav a {
-      color: #ccc;
-      text-decoration: none;
-      font-size: 0.95rem;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      transition: color 0.2s;
-    }
-
-    nav a:hover { color: #fff; }
-
-    main {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 60px 20px;
-    }
-
-    section { margin-bottom: 80px; }
-
-    section h2 {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
-      color: #ffffff;
-      border-left: 4px solid #e63946;
-      padding-left: 14px;
-    }
-
-    .section-description {
-      font-size: 0.97rem;
-      color: #999;
-      max-width: 720px;
-      margin-bottom: 32px;
-    }
-
-    /* Shared card grid */
-    .card-grid {
-      display: grid;
-      gap: 20px;
-    }
-
-    .card-grid figure {
-      display: flex;
-      flex-direction: column;
-      background: #1a1a1a;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.5);
-      transition: transform 0.25s;
-    }
-
-    .card-grid figure:hover { transform: translateY(-4px); }
-
-    .card-grid img,
-    .card-grid video {
-      width: 100%;
-      display: block;
-    }
-
-    .card-grid figcaption {
-      padding: 12px 14px;
-      font-size: 0.88rem;
-      color: #bbb;
-      text-align: center;
-      border-top: 1px solid #2a2a2a;
-    }
-
-    /* Viral Moments: portrait 3-col */
-    .viral-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    .viral-grid img {
-      aspect-ratio: 9 / 16;
-      object-fit: cover;
-    }
-
-    /* Campaign Work: landscape 2-col */
-    .campaign-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    .campaign-grid img {
-      aspect-ratio: 4 / 3;
-      object-fit: cover;
-    }
-
-    /* Analytics: single centred image */
-    .analytics-grid {
-      grid-template-columns: 1fr;
-      max-width: 640px;
-    }
-
-    .analytics-grid img {
-      object-fit: contain;
-      background: #111;
-    }
-
-    /* Video section */
-    .video-grid {
-      grid-template-columns: 1fr;
-      max-width: 640px;
-    }
-
-    .video-grid video {
-      aspect-ratio: 16 / 9;
-      object-fit: cover;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      border-top: 1px solid #222;
-      font-size: 0.85rem;
-      color: #555;
-    }
-
-    @media (max-width: 640px) {
-      .viral-grid,
-      .campaign-grid { grid-template-columns: 1fr; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marthe Hardy's Portfolio</title>
+    <style>
+        body {
+            background-color: #f5f5dc; /* Cream */
+            color: #8B8000; /* Olive */
+        }
+        h1, h2, h3 {
+            color: #DAA520; /* Goldenrod */
+        }
+        #viral-moments {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #DAA520;
+            background: rgba(255, 239, 204, 0.8);
+            border-radius: 8px;
+        }
+        .viral-gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .viral-gallery img {
+            max-width: 30%;
+            border-radius: 8px;
+            margin: 10px;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+    </header>
+    <section id="hero">
+        <h2>Your Hero Section Here</h2>
+        <p>Some introductory text about yourself or your work.</p>
+    </section>
 
-<header>
-  <h1>Marthe Hardy</h1>
-  <p>Social Media Portfolio</p>
-</header>
+    <section id="viral-moments">
+        <h2>March Viral Moments</h2>
+        <div class="viral-gallery">
+            <img src="IMG_5588.jpeg" alt="TikTok Moment 1">
+            <img src="IMG_5589.jpeg" alt="TikTok Moment 2">
+            <img src="IMG_5590.jpeg" alt="TikTok Moment 3">
+        </div>
+    </section>
 
-<nav>
-  <a href="#viral">Viral Moments</a>
-  <a href="#campaign">Campaign Work</a>
-  <a href="#analytics">Analytics</a>
-  <a href="#video">Ad Video</a>
-</nav>
-
-<main>
-
-  <section id="viral">
-    <h2>March Viral Moments</h2>
-    <p class="section-description">
-      TikTok is my strongest channel. These three organic posts from March demonstrate my ability
-      to create content that the algorithm amplifies naturally—zero paid budget, pure strategic
-      content architecture.
-    </p>
-    <div class="card-grid viral-grid">
-      <figure>
-        <img src="images/IMG_5588.jpeg" alt="Viral post 1" />
-        <figcaption>Viral Post 1</figcaption>
-      </figure>
-      <figure>
-        <img src="images/IMG_5589.jpeg" alt="Viral post 2" />
-        <figcaption>Viral Post 2</figcaption>
-      </figure>
-      <figure>
-        <img src="images/IMG_5590.jpeg" alt="Viral post 3" />
-        <figcaption>Viral Post 3</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <section id="campaign">
-    <h2>Campaign Work</h2>
-    <p class="section-description">
-      A selection of branded content and creative campaigns spanning energy, solar, and press topics.
-    </p>
-    <div class="card-grid campaign-grid">
-      <figure>
-        <img src="images/self_energy.jpeg" alt="Energy campaign" />
-        <figcaption>Energy Campaign</figcaption>
-      </figure>
-      <figure>
-        <img src="images/self_solar.jpeg" alt="Solar campaign" />
-        <figcaption>Solar Campaign</figcaption>
-      </figure>
-      <figure>
-        <img src="images/self_press.png" alt="Press feature" />
-        <figcaption>Press Feature</figcaption>
-      </figure>
-      <figure>
-        <img src="images/IMG_2766.jpeg" alt="Campaign content" />
-        <figcaption>Campaign Content</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <section id="analytics">
-    <h2>Analytics</h2>
-    <p class="section-description">
-      Real numbers. 753K views achieved through organic strategy—no paid amplification.
-    </p>
-    <div class="card-grid analytics-grid">
-      <figure>
-        <img src="images/analytics_753k.png" alt="Analytics screenshot showing 753k views" />
-        <figcaption>753K Organic Views</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <section id="video">
-    <h2>Ad Video</h2>
-    <p class="section-description">
-      Mock ad concept demonstrating scripting, filming, and editing skills.
-    </p>
-    <div class="card-grid video-grid">
-      <figure>
-        <video controls>
-          <source src="images/mock_ad_video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <figcaption>Mock Ad Video</figcaption>
-      </figure>
-    </div>
-  </section>
-
-</main>
-
-<footer>
-  &copy; 2025 Marthe Hardy. All rights reserved.
-</footer>
-
+    <section id="skills">
+        <h2>My Skills</h2>
+        <p>Details about your skills here.</p>
+    </section>
 </body>
 </html>

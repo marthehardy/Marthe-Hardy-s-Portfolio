@@ -3,45 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marthe Hardy's Portfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#viral">VIRAL</a></li> <!-- New Link -->
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#case-studies">Case Studies</a></li>
+                <li><a href="#AI-video">AI Video</a></li>
+                <li><a href="#campaign">Self Campaign</a></li>
+                <li><a href="#UGC">UGC Scripts</a></li>
+                <li><a href="#email-templates">Email Templates</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#viral">Viral</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section with Stats -->
+        <section id="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Here you can find my projects and professional journey.</p>
+            <div class="stats">
+                <div class="stat">
+                    <h2>15+</h2>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat">
+                    <h2>5</h2>
+                    <p>Years of Experience</p>
+                </div>
+                <div class="stat">
+                    <h2>10</h2>
+                    <p>Technologies Used</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="viral">
-        <h2>Viral</h2>
-        <div class="grid-container">
-            <img src="IMG_5588.jpg" alt="Image 5588">
-            <img src="IMG_5589.jpg" alt="Image 5589">
-            <img src="IMG_5590.jpg" alt="Image 5590">
-            <img src="IMG_5688.jpg" alt="Image 5688">
-        </div>
-    </section>
+        <!-- Skills Grid -->
+        <section id="skills">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">React</div>
+                <div class="skill">Node.js</div>
+            </div>
+        </section>
 
-    <hr>
-    <section id="contact">
-        <h2>Contact</h2>
-        <!-- Contact form goes here -->
-    </section>
+        <!-- Tools Section -->
+        <section id="tools">
+            <h2>Tools I Use</h2>
+            <ul>
+                <li>Git</li>
+                <li>Visual Studio Code</li>
+                <li>Figma</li>
+                <li>Postman</li>
+            </ul>
+        </section>
 
-    <style>
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 16px;
-        }
-        .grid-container img {
-            width: 100%;
-            height: auto;
-        }
-    </style>
+        <!-- Case Studies -->
+        <section id="case-studies">
+            <h2>Case Studies</h2>
+            <div class="case-study">
+                <h3>Project A</h3>
+                <p>Description and analytics for Project A.</p>
+            </div>
+            <div class="case-study">
+                <h3>Project B</h3>
+                <p>Description and analytics for Project B.</p>
+            </div>
+            <div class="case-study">
+                <h3>Project C</h3>
+                <p>Description and analytics for Project C.</p>
+            </div>
+        </section>
+
+        <!-- AI Video Section -->
+        <section id="AI-video">
+            <h2>AI Video Section</h2>
+            <video src="AI_video.mp4" controls></video>
+        </section>
+
+        <!-- SELF Multi-Platform Campaign Section -->
+        <section id="campaign">
+            <h2>Self Multi-Platform Campaign</h2>
+            <p>Details about the campaign.</p>
+        </section>
+
+        <!-- UGC Scripts -->
+        <section id="UGC">
+            <h2>UGC Scripts</h2>
+            <p>Examples of UGC scripts.</p>
+        </section>
+
+        <!-- Email Templates -->
+        <section id="email-templates">
+            <h2>Email Templates</h2>
+            <p>Link to email templates.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <!-- New Viral Section with 4-Image Grid -->
+        <section id="viral">
+            <h2>Viral Section</h2>
+            <div class="viral-grid">
+                <img src="IMG_5588.jpg" alt="Image 1">
+                <img src="IMG_5589.jpg" alt="Image 2">
+                <img src="IMG_5590.jpg" alt="Image 3">
+                <img src="IMG_5688.jpg" alt="Image 4">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Marthe Hardy</p>
+    </footer>
 </body>
 </html>

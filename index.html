@@ -4,54 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marthe Hardy's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #f5f5dc; /* Cream */
-            color: #8B8000; /* Olive */
+            font-family: 'Playfair Display', serif;
+            background-color: #1a1a1a;
+            color: #f5f5f5;
+            margin: 0;
+            padding: 0;
         }
-        h1, h2, h3 {
-            color: #DAA520; /* Goldenrod */
+        .hero {
+            padding: 50px;
+            text-align: center;
+            background-color: #111;
         }
-        #viral-moments {
-            margin: 20px 0;
+        .march-viral-moments {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
             padding: 20px;
-            border: 1px solid #DAA520;
-            background: rgba(255, 239, 204, 0.8);
-            border-radius: 8px;
+            background-color: #222;
         }
-        .viral-gallery {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
+        .march-viral-moments img {
+            width: 100%;
+            border: 2px solid #c9a84c;
         }
-        .viral-gallery img {
-            max-width: 30%;
-            border-radius: 8px;
-            margin: 10px;
+        .section-title {
+            color: #c9a84c;
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2em;
         }
+        /* additional styles for case studies, skills, scripts, etc. */
     </style>
 </head>
 <body>
-    <header>
+    <div class="hero">
         <h1>Welcome to My Portfolio</h1>
-    </header>
-    <section id="hero">
-        <h2>Your Hero Section Here</h2>
-        <p>Some introductory text about yourself or your work.</p>
-    </section>
-
-    <section id="viral-moments">
-        <h2>March Viral Moments</h2>
-        <div class="viral-gallery">
-            <img src="IMG_5588.jpeg" alt="TikTok Moment 1">
-            <img src="IMG_5589.jpeg" alt="TikTok Moment 2">
-            <img src="IMG_5590.jpeg" alt="TikTok Moment 3">
-        </div>
-    </section>
-
-    <section id="skills">
-        <h2>My Skills</h2>
-        <p>Details about your skills here.</p>
-    </section>
+        <p>Experience my journey through design and development.</p>
+    </div>
+    <div class="march-viral-moments">
+        <h2 class="section-title">March Viral Moments</h2>
+        <img src="IMG_5588.jpeg" alt="Viral Moment 1">
+        <img src="IMG_5589.jpeg" alt="Viral Moment 2">
+        <img src="IMG_5590.jpeg" alt="Viral Moment 3">
+    </div>
+    <div class="case-studies">
+        <h2>Case Studies</h2>
+        <p>Details about case studies go here...</p>
+    </div>
+    <div class="skills">
+        <h2>Skills</h2>
+        <p>List of skills goes here...</p>
+    </div>
+    <div class="scripts">
+        <h2>Scripts</h2>
+        <p>Scripts go here...</p>
+    </div>
+    <div class="contact">
+        <h2>Contact</h2>
+        <p>Email: example@example.com</p>
+    </div>
 </body>
 </html>

@@ -1,11 +1,47 @@
-<!-- Divider -->
-<section class="viral-section">
-  <h2 id="viral">Viral Moments on TikTok</h2>
-  <p>Discover our organic TikTok performance strategy that has led to significant growth and engagement on the platform. We leverage viral trends and content to enhance brand visibility.</p>
-  <div class="viral-grid">
-    <img src="IMG_5588.jpeg" alt="Viral Moment 1">
-    <img src="IMG_5589.jpeg" alt="Viral Moment 2">
-    <img src="IMG_5590.jpeg" alt="Viral Moment 3">
-    <img src="IMG_5688.jpeg" alt="Viral Moment 4">
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marthe Hardy's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#viral">VIRAL</a></li> <!-- New Link -->
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="viral">
+        <h2>Viral</h2>
+        <div class="grid-container">
+            <img src="IMG_5588.jpg" alt="Image 5588">
+            <img src="IMG_5589.jpg" alt="Image 5589">
+            <img src="IMG_5590.jpg" alt="Image 5590">
+            <img src="IMG_5688.jpg" alt="Image 5688">
+        </div>
+    </section>
+
+    <hr>
+    <section id="contact">
+        <h2>Contact</h2>
+        <!-- Contact form goes here -->
+    </section>
+
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+        .grid-container img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</body>
+</html>
